@@ -17,6 +17,7 @@
 .banner .slider .item {
   position:absolute;
   inset: 0 0 0 0;
+  transform: translateZ(550px);
 }
 .banner .slider .item img{
   width:100%;
