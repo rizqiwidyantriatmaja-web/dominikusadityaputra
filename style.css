@@ -49,6 +49,7 @@
   flex-wrap:wrap;
   justify-content:space-between;
   align-items:center; 
+  z-index:1;
 }
 .banner .content h1{
   font-family:'ICA Rubrik';
@@ -81,4 +82,5 @@
   background-size: auto 130%;
   background-repeat:no-repeat;
   background-position:top center;
+  z-index:0;
 }
