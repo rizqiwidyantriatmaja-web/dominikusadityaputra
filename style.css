@@ -60,7 +60,7 @@
   position:relative;
 }
 .banner .content h1::after{
-  position:absolute
+  position:absolute;
   inset: 0 0 0 0;
   content:attr(data-content);
   z-index:2;
