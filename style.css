@@ -55,6 +55,13 @@
   font-size:16em;
   line-height:1em;
   color:#25283B;
+  position:relative;
+}
+.banner .content h1::after{
+  position:absolute
+  inset: 0 0 0 0;
+  content:attr(data-content);
+  z-index:2;
 }
 .banner .content .author{
   font-family:'Poppins';
