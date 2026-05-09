@@ -12,6 +12,8 @@
   justify-content: flex-end;
   background-image: url("images/miku2.png");
   background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
 }
 .banner .slider{
   position:absolute;
