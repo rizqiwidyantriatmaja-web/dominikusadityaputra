@@ -48,6 +48,19 @@
   display:flex;
   flex-wrap:wrap;
   justify-content:space-between;
-  align-items:center;
-  
+  align-items:center; 
+}
+.banner .content h1{
+  font-family:'ICA Rubrik';
+  font-size:16em;
+  line-height:1em;
+  color:25283B;
+}
+.banner .content author{
+  font-family:'Poppins';
+  text-align:right;
+  max-widht:200px;
+}
+.banner .content h2{
+  font-size:3em;
 }
