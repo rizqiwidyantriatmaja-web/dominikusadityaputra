@@ -47,9 +47,9 @@ body {
 .rectangle {
   width: 905w;
   height: 500px;
-  display:flex;
-  background-color: #3498db;              
+  display:flex;             
   border-radius:5px;
+  background-color: rgba(0, 255, 255, 0.5);
 }
 .rectangle .title h1 {
   position:relative;
