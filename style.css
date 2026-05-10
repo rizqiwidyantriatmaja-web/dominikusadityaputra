@@ -50,10 +50,14 @@ body {
   display:flex;             
   border-radius:5px;
   background-color: rgba(197, 213, 227, 0.95);
+  outline-style: solid;
+  outline-color: rgba(132,160,236,1);
+  outline-width:1px;
 }
 .rectangle .title h1 {
   position:relative;
   font-family:'Poppins';
   font-size:6em;
   color:black;
+  margin-left:30px;
 }
