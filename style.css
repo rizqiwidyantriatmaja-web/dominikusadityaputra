@@ -41,13 +41,13 @@
   height:100%;
   object-fit:cover;
 }
-.title h1{
+.title h1 {
   position:relative;
   font-family:'Poppins';
   margin-left:50px;
   font-size:6em;
   color:#FFFFFF;
 }
-body{
+body {
   overflow-x:hidden;
 }
