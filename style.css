@@ -52,9 +52,9 @@ body {
   overflow-x:hidden;
 }
 .rectangle {
-  width: 90vw;
+  width: 905w;
   height: 150px;
-  margin:auto;
+  display:flex;
   background-color: #3498db; 
   color: white;             
   align-items: center;
