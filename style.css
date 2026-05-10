@@ -44,7 +44,7 @@
 .title h1{
   position:relative;
   font-family:'Poppins';
-  left:50px;
+  margin-left:50px;
   font-size:6em;
   color:#FFFFFF;
 }
