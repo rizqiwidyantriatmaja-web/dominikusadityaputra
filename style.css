@@ -51,7 +51,7 @@
 body {
   overflow-x:hidden;
 }
-.box {
+.low-opacity-square {
   width: 200px;
   height: 200px;
   background-color: rgba(0, 0, 0, 0.3); 
