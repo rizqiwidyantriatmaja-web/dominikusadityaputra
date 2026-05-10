@@ -51,12 +51,10 @@
 body {
   overflow-x:hidden;
 }
-.low-opacity-square {
-  width: 200px;
-  height: 200px;
-  background-color: rgba(0, 0, 0, 0.3); 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: black; 
+.glass-box {
+  /* Red, Green, Blue, Alpha (0.0 to 1.0) */
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+  color: white; /* Text color stays solid */
+  padding: 20px;
+  width: 300px;
 }
