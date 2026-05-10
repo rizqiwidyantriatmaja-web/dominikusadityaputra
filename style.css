@@ -48,3 +48,6 @@
   font-size:6em;
   color:#FFFFFF;
 }
+html, body{
+  overflow-x:hidden;
+}
