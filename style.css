@@ -53,7 +53,7 @@ body {
 }
 .rectangle {
   width: 905w;
-  height: 150px;
+  height: 500px;
   display:flex;
   background-color: #3498db; 
   color: white;             
