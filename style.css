@@ -45,7 +45,7 @@ body {
   overflow-x:hidden;
 }
 .rectangle {
-  width: 99vw;
+  width: 97vw;
   height: 500px;
   display:flex;             
   border-radius:5px;
