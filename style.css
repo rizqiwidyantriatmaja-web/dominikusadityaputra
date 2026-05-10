@@ -52,9 +52,9 @@ body {
   overflow-x:hidden;
 }
 .low-opacity-square {
-  width: 200px;
+  width: 1000px;
   height: 200px;
-  background-color: rgba(0, 0, 0, 0.3); 
+  background-color: rgba(0, 255, 255, 0.3); 
   display: flex;
   align-items: center;
   justify-content: center;
