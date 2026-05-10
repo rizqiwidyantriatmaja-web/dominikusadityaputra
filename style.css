@@ -52,7 +52,7 @@ body {
   overflow-x:hidden;
 }
 .rectangle {
-  width: 500px;
+  width: 1000px;
   height: 150px;
   background-color: #3498db; 
   color: white;             
