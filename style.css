@@ -49,7 +49,7 @@ body {
   height: 500px;
   display:flex;             
   border-radius:5px;
-  background-color: rgba(197, 213, 227, 0.95);
+  background-color: rgba(197, 213, 227, 0.85);
   outline-style: solid;
   outline-color: rgba(132,160,236,1);
   outline-width:1px;
