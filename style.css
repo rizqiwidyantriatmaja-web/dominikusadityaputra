@@ -51,17 +51,10 @@
 body {
   overflow-x:hidden;
 }
-body {
-  scrollbar-width:none;
-  -ms-overflow-style:none;
-}
-body::-webkit-scrollbar {
-  display: none;
-}
 .box {
   width: 1800px;
   height: 1000px;
-  background-color: rgba(0, 255, 255, 0.3); 
+  background-color: rgba(0, 0, 0, 0.3); 
   display: flex;
   align-items: center;
   justify-content: center;
