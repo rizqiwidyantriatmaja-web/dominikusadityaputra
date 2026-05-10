@@ -58,13 +58,12 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
-.low-opacity-square {
-  width: 200px;
-  height: 200px;
-  /* (Red, Green, Blue, Alpha) - 0.3 is 30% opacity */
-  background-color: rgba(0, 0, 0, 0.3); 
+.box {
+  width: 1800px;
+  height: 1000px;
+  background-color: rgba(0, 255, 255, 0.3); 
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white; /* Text stays 100% white */
+  color: black; 
 }
