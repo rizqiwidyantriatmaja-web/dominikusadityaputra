@@ -52,8 +52,9 @@ body {
   overflow-x:hidden;
 }
 .rectangle {
-  width: 90%;
+  width: 100%;
   height: 150px;
+  margin:auto;
   background-color: #3498db; 
   color: white;             
   align-items: center;
