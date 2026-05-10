@@ -21,6 +21,7 @@
   transform:perspective(1000px);
   animation: autoRun 20s linear infinite;
   z-index:2;
+  border-radius:5px;
 }
 @keyframes autoRun {
   from{
