@@ -52,11 +52,10 @@ body {
   overflow-x:hidden;
 }
 .rectangle {
-  width: 1000px;
+  width: 90%;
   height: 150px;
   background-color: #3498db; 
   color: white;             
-  display: flex;
   align-items: center;
   justify-content: center;
   font-family: sans-serif;
