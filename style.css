@@ -51,11 +51,3 @@
 body {
   overflow-x:hidden;
 }
-.glass-box {
-  /* Red, Green, Blue, Alpha (0.0 to 1.0) */
-  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
-  color: white; /* Text color stays solid */
-  padding: 20px;
-  width: 300px;
-  height:200px;
-}
