@@ -41,13 +41,6 @@
   height:100%;
   object-fit:cover;
 }
-.title h1 {
-  position:relative;
-  font-family:'Poppins';
-  margin-left:50px;
-  font-size:6em;
-  color:black;
-}
 body {
   overflow-x:hidden;
 }
@@ -62,4 +55,11 @@ body {
   font-family: sans-serif;
   font-weight: bold;
   border-radius:5px;
+}
+.rectangle .title h1 {
+  position:relative;
+  font-family:'Poppins';
+  margin-left:50px;
+  font-size:6em;
+  color:black;
 }
