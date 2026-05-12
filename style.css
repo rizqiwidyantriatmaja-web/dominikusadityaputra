@@ -56,10 +56,10 @@ body {
   padding: 10px;
 }
 .left {
-  width: 20%;
+  width: 10%;
 }
 .right {
-  width: 80%;
+  width: 90%;
 }
 .row:after {
   content: "";
