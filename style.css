@@ -73,6 +73,7 @@ body {
   content: "";
   display: table;
   clear: both;
+}
 .mainui .rectangle .title h1 {
   position:relative;
   font-family:'Poppins';
