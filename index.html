@@ -28,6 +28,21 @@
         * {
           box-sizing: border-box;
         }
+        .column {
+          float: left;
+          padding: 10px;
+        }
+        .left {
+          width: 10%;
+        }
+        .right {
+          width: 90%;
+        }
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
       </style>
   </head>
   <body>
