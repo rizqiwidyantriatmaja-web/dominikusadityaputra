@@ -46,7 +46,11 @@ body {
   overflow-x:hidden;
 }
 .rectangle {
-  width: 98vw;
+  float: left;
+  padding: 10px;
+}
+.right{
+  width: 75%;
   height: 500px;
   display:flex;             
   border-radius:5px;
@@ -55,7 +59,21 @@ body {
   outline-color: rgba(132,160,236,1);
   outline-width:1px;
 }
-.rectangle .title h1 {
+.left{
+  width: 25%;
+  height: 500px;
+  display:flex;             
+  border-radius:5px;
+  background-color: rgba(197, 213, 227, 0.85);
+  outline-style: solid;
+  outline-color: rgba(132,160,236,1);
+  outline-width:1px;
+}
+.mainui:after {
+  content: "";
+  display: table;
+  clear: both;
+.mainui .rectangle .title h1 {
   position:relative;
   font-family:'Poppins';
   font-size:2em;
