@@ -51,9 +51,6 @@ body {
   background-size:100%;
   background-position: center;
 }
-* {
-  box-sizing: border-box;
-}
 .column {
   float: left;
   padding: 10px;
