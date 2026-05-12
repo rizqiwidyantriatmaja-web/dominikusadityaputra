@@ -50,9 +50,7 @@ body {
   padding: 10px;
 }
 .rectangle .right {
-  width: 75%;
-  height: 500px;
-  display:flex;             
+  width: 75%;          
   border-radius:5px;
   background-color: rgba(197, 213, 227, 0.85);
   outline-style: solid;
@@ -60,9 +58,7 @@ body {
   outline-width:1px;
 }
 .rectangle .left {
-  width: 25%;
-  height: 500px;
-  display:flex;             
+  width: 25%;      
   border-radius:5px;
   background-color: rgba(197, 213, 227, 0.85);
   outline-style: solid;
