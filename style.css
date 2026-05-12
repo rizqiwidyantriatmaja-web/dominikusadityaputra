@@ -49,7 +49,7 @@ body {
   float: left;
   padding: 10px;
 }
-.right{
+.rectangle .right{
   width: 75%;
   height: 500px;
   display:flex;             
@@ -59,7 +59,7 @@ body {
   outline-color: rgba(132,160,236,1);
   outline-width:1px;
 }
-.left{
+.rectangle .left{
   width: 25%;
   height: 500px;
   display:flex;             
