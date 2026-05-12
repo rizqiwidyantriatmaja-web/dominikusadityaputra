@@ -51,18 +51,3 @@ body {
   background-size:100%;
   background-position: center;
 }
-.column {
-  float: left;
-  padding: 10px;
-}
-.left {
-  width: 10%;
-}
-.right {
-  width: 90%;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
