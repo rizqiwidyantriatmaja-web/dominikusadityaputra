@@ -68,10 +68,12 @@ body {
 header {
   --_animationStartsAfter: 50vh;
   --_animationDistance: 120px;
-  --_surfaceColorStart: rgba(0, 255, 255);
+  --_surfaceColorStart: hsl(0 50% 100%);
   --_surfaceColorEnd: hsl(0 50% 100%);
-  --_textColorStart: hsl(0 10% 90%);
+  --_textColorStart: hsl(0 10% 10%);
   --_textColorEnd: hsl(0 10% 10%);
+  margin:0px;
+  padding:0px;
 
   padding: 1rem 3rem;
   margin-inline: auto;
