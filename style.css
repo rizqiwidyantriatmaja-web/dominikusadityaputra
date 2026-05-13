@@ -1,5 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/ica-rubrik-black');
 @import url('https://fonts.cdnfonts.com/css/poppins');
+@import url('https://fonts.cdnfonts.com/css/violet-sans');
 
 .banner {
   width:100%;
@@ -109,6 +110,7 @@ header {
     list-style: none;
     margin: 0;
     padding: 0;
+    font-family:'Violet Sans';
   }
 
   a {
