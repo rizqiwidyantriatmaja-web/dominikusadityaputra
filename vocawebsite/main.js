@@ -1,9 +1,12 @@
 const YTPlayerOverlay = document.querySelector(".youtube-player-overlay");
-const YTLinks = document.querySelectorAll(".voca");
+const YTLinks = document.querySelectorAll(".vocas");
+const YTPlayerPopup = document.querySelector(".youtube-player-popup");
 
 YTLinks.forEach(link => {
   link.addEventListener("click", () => {
     YTPlayerOverlay.classList.add("active");
+    let videoLink = 'https://www.youtube.com/embed/${link.dataset.link}'
+    YTPlayerPopup.src = videoLink;
   });
 });
 
