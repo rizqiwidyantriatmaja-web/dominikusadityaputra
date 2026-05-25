@@ -1,6 +1,6 @@
 const YTPlayerOverlay = document.querySelector(".youtube-player-overlay");
 const YTLinks = document.querySelectorAll(".vocas");
-const YTPlayerPopup = document.querySelector(".youtube-player-popup");
+const YTPlayerPopup = document.querySelector(".youtube-player-popup iframe");
 
 YTLinks.forEach(link => {
   link.addEventListener("click", () => {
