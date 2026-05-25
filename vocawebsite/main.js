@@ -13,4 +13,5 @@ YTLinks.forEach(link => {
 
 YTPlayerOverlay.addEventListener("click", () => {
     YTPlayerOverlay.classList.remove("active");
+    YTPlayerPopup.src = "";
   });
