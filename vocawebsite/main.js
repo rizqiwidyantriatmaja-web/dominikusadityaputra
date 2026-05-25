@@ -5,7 +5,8 @@ const YTPlayerPopup = document.querySelector(".youtube-player-popup iframe");
 YTLinks.forEach(link => {
   link.addEventListener("click", () => {
     YTPlayerOverlay.classList.add("active");
-    let videoLink = `https://www.youtube.com/embed/${link.dataset.link}`
+    let videoLink = `https://www.youtube.com/embed/${link.dataset.link}`;
+    console.log(videoLink);
     YTPlayerPopup.src = videoLink;
   });
 });
