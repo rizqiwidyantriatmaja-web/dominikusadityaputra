@@ -46,7 +46,7 @@ class MaterialLoginForm extends FormUtils.LoginFormBase {
 
     setupRipples() {
         // Inputs ripple on focus
-        [this.form.querySelector('#email'), this.form.querySelector('#password')].forEach(input => {
+        [this.form.querySelector('#username'), this.form.querySelector('#password')].forEach(input => {
             if (!input) return;
             input.addEventListener('focus', (e) => {
                 const r = input.parentNode.querySelector('.ripple-container');
