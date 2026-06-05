@@ -20,9 +20,7 @@ document.getElementById("loginForm").addEventListener("submit", async function(e
 
         if (data.username === "admin") {
          window.location.href = "../admin/src/index.html";
-        }
-            
-        else {
+        } else {
              window.location.href = "../index.html";
         }
          
