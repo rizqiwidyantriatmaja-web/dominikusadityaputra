@@ -17,7 +17,6 @@ document.getElementById("loginForm").addEventListener("submit", async function(e
     if (data.status === "success") {
         // simpan username
             localStorage.setItem("username", data.username);
-            window.location.href = "../index.html";
 
     if (data.username === "admin") {
          window.location.href = "../admin/src/index.html";
@@ -41,3 +40,4 @@ document.getElementById("loginForm").addEventListener("submit", async function(e
 } 
    
 });
+
