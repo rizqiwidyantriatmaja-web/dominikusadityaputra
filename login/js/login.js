@@ -18,12 +18,13 @@ document.getElementById("loginForm").addEventListener("submit", async function(e
         // simpan username
             localStorage.setItem("username", data.username);
 
-    if (data.username === "admin") {
+        if (data.username === "admin") {
          window.location.href = "../admin/src/index.html";
-    }
-    else {
-         window.location.href = "../index.html";
-    }
+        }
+            
+        else {
+             window.location.href = "../index.html";
+        }
          
     } else {
          document.getElementById("message").innerText = "Username / Password salah";alert("Login gagal");
