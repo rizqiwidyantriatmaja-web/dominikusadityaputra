@@ -20,7 +20,7 @@ document.getElementById("registerForm").addEventListener("submit", async functio
         window.location.href = "index.html";
     } else {
         const message = document.getElementById("message");
-        message.innerText = "Gagal registrasi";
+        message.innerText = "Gagal registrasi, ganti username anda";
         message.style.display = "block";
 
         
