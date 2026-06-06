@@ -23,11 +23,6 @@ class LoginForm {
         this.submitBtn.textContent = text;
     }
 
-    validateEmail(email) {
-        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return re.test(email);
-    }
-
     login(event) {
         event.preventDefault();
 
