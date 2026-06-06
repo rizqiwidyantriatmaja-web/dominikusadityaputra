@@ -20,5 +20,9 @@ document.getElementById("registerForm").addEventListener("submit", async functio
         window.location.href = "../index.html";
     } else {
         document.getElementById("message").innerText = data.message || "Gagal registrasi";
+
+        setTimeout(() => {
+            messageBox.style.display = "none";
+        }, 3000);
     }
 });
