@@ -70,15 +70,8 @@ class RegisterForm {
         if (passwordValue === '') {
             return this.showError(this.passwordElement, this.passErrorElement, 'Password cannot be empty');
         }
-        if (passwordValue.length < 8) {
+        if (passwordValue.length < 3) {
             return this.showError(this.passwordElement, this.passErrorElement, 'Password must be at least 8 characters');
-        }
-        if (!this.validatePassword(passwordValue)) {
-            return this.showError(
-                this.passwordElement,
-                this.passErrorElement,
-                'Password must include uppercase, lowercase, a number, and a special character'
-            );
         }
 
         // Confirm password match
