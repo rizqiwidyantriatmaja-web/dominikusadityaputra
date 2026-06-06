@@ -3,7 +3,7 @@ class LoginForm {
         this.form = document.getElementById(formId);
         this.submitBtn = document.getElementById(submitBtnId);
 
-        this.emailElement = document.getElementById('email');
+        this.emailElement = document.getElementById('username');
         this.passwordElement = document.getElementById('password');
 
         this.emailErrorElement = document.getElementById('invalid-user');
@@ -23,9 +23,9 @@ class LoginForm {
         this.submitBtn.textContent = text;
     }
 
-    validateEmail(email) {
+    validateEmail(username) {
         const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return re.test(email);
+        return re.test(username);
     }
 
     login(event) {
