@@ -19,8 +19,11 @@ document.getElementById("registerForm").addEventListener("submit", async functio
         document.getElementById("message").innerText = "Registrasi berhasil, silakan login";
         window.location.href = "../index.html";
     } else {
-        document.getElementById("message").innerText = data.message || "Gagal registrasi";
+        const message = document.getElementById("message");
+        message.innerText = "Gagal registrasi";
+        message.style.display = "block";
 
+        
         setTimeout(() => {
             message.style.display = "none";
         }, 3000);
