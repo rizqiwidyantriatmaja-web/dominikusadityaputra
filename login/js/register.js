@@ -22,7 +22,7 @@ document.getElementById("registerForm").addEventListener("submit", async functio
         document.getElementById("message").innerText = data.message || "Gagal registrasi";
 
         setTimeout(() => {
-            messageBox.style.display = "none";
+            message.style.display = "none";
         }, 3000);
     }
 });
