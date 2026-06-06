@@ -40,10 +40,7 @@ class LoginForm {
 
         // Validate email
         if (emailValue === '') {
-            return this.showError(this.emailElement, this.emailErrorElement, 'Email cannot be empty');
-        }
-        if (!this.validateEmail(emailValue)) {
-            return this.showError(this.emailElement, this.emailErrorElement, 'Please enter a valid email address');
+            return this.showError(this.emailElement, this.emailErrorElement, 'Username cannot be empty');
         }
 
         // Validate password
