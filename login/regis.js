@@ -87,8 +87,6 @@ class RegisterForm {
         // Simulate registration
         this.toggleButton(false, 'Logging in...');
         setTimeout(() => {
-            alert('Register simulated - valid inputs. Implement server auth for real logins.');
-            this.form.reset();
             this.toggleButton(true, 'Login');
         }, 800);
     }
