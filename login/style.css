@@ -766,10 +766,3 @@ body:has(form button.footer-register-btn) .socials-img img {
     text-align: center;
     margin-top: 20px;
 }
-#alertBox{
-    position: relative;
-    top: 20px;
-    left:10px;
-    transform: translateX(-50%);
-    z-index: 999;
-}
