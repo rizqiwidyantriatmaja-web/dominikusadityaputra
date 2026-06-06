@@ -46,8 +46,6 @@ class LoginForm {
         // Simulate login
         this.toggleButton(false, 'Logging in...');
         setTimeout(() => {
-            alert('Login simulated - valid inputs. Implement server auth for real logins.');
-            this.form.reset();
             this.toggleButton(true, 'Login');
         }, 800);
     }
