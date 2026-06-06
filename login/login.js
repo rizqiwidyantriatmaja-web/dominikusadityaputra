@@ -23,9 +23,9 @@ class LoginForm {
         this.submitBtn.textContent = text;
     }
 
-    validateEmail(username) {
+    validateEmail(email) {
         const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return re.test(username);
+        return re.test(email);
     }
 
     login(event) {
