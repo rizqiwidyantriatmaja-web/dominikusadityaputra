@@ -760,9 +760,13 @@ body:has(form button.footer-register-btn) .socials-img img {
     text-align: center;
     border:1px solid #b32929;
 }
-#message{
+#message {
     background: #ff4e4e;
     color: white;
     text-align: center;
     margin-top: 20px;
+    padding: 12px 10px;       
+    border-radius: 8px;       
+    font-size: 0.95rem;
+    box-sizing: border-box;
 }
