@@ -23,13 +23,13 @@ document.getElementById("loginForm").addEventListener("submit", async function(e
             else {
              window.location.href = "../index.html";
             }
-    } else {
-         document.getElementById("message").innerText = "Username / Password salah";alert("Login gagal");
-    }
     // } else {
-    // const alertBox = document.getElementById("alertBox");
-    // alertBox.innerText = "Username atau Password salah, silahkan coba lagi";
-    // alertBox.style.display = "block";
+    //      document.getElementById("message").innerText = "Username / Password salah";alert("Login gagal");
+    // }
+    } else {
+    const alertBox = document.getElementById("alertBox");
+    alertBox.innerText = "Username atau Password salah, silahkan coba lagi";
+    alertBox.style.display = "block";
 
     setTimeout(() => {
         alertBox.style.display = "none";
