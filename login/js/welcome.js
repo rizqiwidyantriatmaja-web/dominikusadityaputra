@@ -11,12 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const user = localStorage.getItem("username");
 
-    if (user) {
+   if (user) {
         document.getElementById("userInfo").innerText = "Halo, " + user;
-        document.getElementById("userInfo").className = "sudah-login";
-        if (user === "admin") {
-            document.getElementById("userAdmin").classList.remove("disabled");
-        }
 
         document.getElementById("authArea").innerHTML = `
             <button onclick="logout()" class="nav-cta">Logout</button>
