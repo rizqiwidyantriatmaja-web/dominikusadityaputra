@@ -13,7 +13,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (user) {
         document.getElementById("userInfo").innerText = "Halo, " + user;
-
+        
+        if (user === "admin") {
+            document.getElementById("userAdmin").classList.remove("disabled");
+        }
+            
         document.getElementById("authArea").innerHTML = `
             <button onclick="logout()" class="nav-cta">Logout</button>
         `;
