@@ -16,14 +16,3 @@ YTPlayerOverlay.addEventListener("click", () => {
     YTPlayerPopup.src = "";
   });
 
-document.addEventListener("DOMContentLoaded", function() {
-    const loggedInUser = localStorage.getItem("username");
-    const adminLink = document.getElementById("adminLink");
-
-    if (loggedInUser === "admin") {
-        adminLink.classList.remove("disabled-link");
-        adminLink.style.opacity = "1";
-    } else {
-        adminLink.classList.add("disabled-link");
-    }
-});
