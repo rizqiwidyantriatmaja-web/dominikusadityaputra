@@ -4,137 +4,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
      <title>sigmga</title>
      <link rel="stylesheet" href="style.css">
-      <style>
-        @import url('https://fonts.cdnfonts.com/css/violet-sans');
-        
-        body {
-          background-image: url('images/miku3.png');
-          background-repeat: no-repeat; 
-          background-size: cover;     
-          background-attachment: fixed;
-          background-size:100%;
-          background-position: center;
-        }
-        ::-webkit-scrollbar {
-        width: 10px;
-          }
-        ::-webkit-scrollbar-track {
-        background: #f1f1f1; 
-          }
-        ::-webkit-scrollbar-thumb {
-        background: #888; 
-          }
-        ::-webkit-scrollbar-thumb:hover {
-        background: #555; 
-          }
-        * {
-          box-sizing: border-box;
-          margin:0px;
-          padding:0px;
-          scroll-behavior:smooth;
-        }
-        .column {
-          float: left;
-          padding: 10px;
-          height:1500px;
-        }
-        .left {
-          width: 14%;
-          border-radius:5px;
-          margin-left:7px;
-        }
-        .right {
-          width: 84%;
-          margin-left:10px;
-          border-radius:5px;
-        }
-        .row:after {
-          content: "";
-          display: table;
-          clear: both;
-        }
-        .left h1{
-          font-family:'Poppins';
-          font-size:30px;
-          margin-left: 3px;
-          margin-top:15px;
-          align-text:center;
-          justify-content:center;
-        }
-        .left a{
-          font-family:'Violet Sans';
-          font-size:1em;
-          margin-left: 15px;
-          text-decoration:none;
-          background-color:transparent;
-        }
-        .left a:hover{
-          background-color:white;
-        }
-        .right h1 {
-          font-family:'Poppins';
-          font-size:3em;
-          margin-left: 15px;
-          margin-top:15px;
-        }
-        .right h2{
-          font-family:'Poppins';
-          font-size:2em;
-          margin-left:20px;
-        }
-        .right p{
-          font-family:'Violet Sans';
-          margin-left:15px;
-          margin-top:0px;
-          font-size:1em;
-        }
-        .voca {
-          display:flex;
-          gap:10px;
-          flex-direction:row;
-          align-text:center;
-          width: 1000px; 
-          overflow-x: auto;
-          white-space: nowrap;
-          margin-left:20px;
-          padding:10px;
-          justify-content:left;
-        }
-        .vocas {
-          min-width:140px;
-          justify-content:center;
-          text-align:left;
-        }
-        .vocas img{
-          width:140px;
-          height:140px;
-          border-radius:7px;
-        }
-        .vocas p{
-          font-size:14px;
-          font-family:'Violet Sans';
-          margin-top:4px;
-          margin-left:0px;
-        }
-        .disabled {
-          color: gray !important;         
-          pointer-events: none;           
-          cursor: not-allowed;             
-          text-decoration: none;
-          opacity: 0.6;
-        }
-        .list{
-          
-        }
-      </style>
   </head>
   <body>
     <header>
       <nav>
         <ul>
           <li><a href="#home">Beranda</a></li>
-          <li><a href="#">Tentang</a></li>
-          <li><a href="#">Kontak Kami</a></li>
+          <li><a href="#ttg">Tentang Kami</a></li>
+          <li><a style="cursor:default;">Kontak Kami</a></li>
           <li><a href="admin/src/index.html" class="disabled" id="userAdmin">Panel Admin</a></li>
           <p id="userInfo" style="margin-left:650px;">Belum Login</p>
         </ul>
@@ -158,80 +35,164 @@
       </div>
     </div>
     <div class="row" id="home">
-      <div class="column left" style="background-color: rgba(197, 213, 226, 0.85);">
+      <div class="column left">
         <h1>VocaPedia</h1>
-        <a href="index.html">Beranda</a>
-        <a href="index.html">Vocaloid</a>
-        <a href="index.html" style="margin-left:20px;">Hatsune Miku</a>
-        <a href="index.html">SynthV</a>
+        <div class="list">
+          <a href="index.html">Beranda</a>
+          <a href="https://vocaloid.fandom.com/wiki/Vocaloid_Wiki" >Vocaloid</a>
+          <a href="https://synthv.fandom.com/wiki/SynthV_Wiki">SynthV</a>
+          <a href="https://utau.fandom.com/wiki/UTAU_wiki">Utau</a>
+          <a href="https://vocaloid.fandom.com/wiki/Category:Songs">Lagu</a>
+          <a href="https://vocaloid.fandom.com/wiki/Category:Producer">Produser</a>
+        </div>
       </div>
-      <div class="column right" style="background-color: rgba(197, 213, 226, 0.85);">
-        <h1>Welcome to the VocaPedia!!!!</h1>
-        <p>what is vocapedia? ba;dnawlfin baujwfaw</p>
+      <div class="column right">
+        <h1>Selamat Datang</h1>
+        <p>Vocapedia adalah sebuah platform ensiklopedia digital interaktif yang dirancang khusus untuk menjelajahi dunia teknologi sintesis suara, mencakup berbagai pustaka suara populer seperti Vocaloid yang legendaris, Synthesizer V (SynthV) dengan teknologi AI-nya yang sangat realistis, hingga UTAU yang berbasis komunitas dan ramah bagi para kreator independen.</p>
         <h2 style="margin-top:20px;">Vocaloid</h2>
         <div class="voca" style="margin-top:10px;">
           <div class="vocas" style="margin-left:0px;">
             <a href="miku.html"><img src="images/mikuvo.jpg"></a>
             <p>Hatsune Miku</p>
           </div>
-          <div class="vocas" style="margin-left:20px;">
-            <a href="#"><img src="images/rinvo.jpg"></a>
+          <div class="vocas" style="margin-left:20px; pointer-events:none;">
+            <a ><img src="images/rinvo.jpg"></a>
             <p>Kagamine Rin</p>
           </div>
-          <div class="vocas" style="margin-left:20px;">
-            <a href="#"><img src="images/lenvoca.jpg"></a>
+          <div class="vocas" style="margin-left:20px; pointer-events:none;">
+            <a ><img src="images/lenvoca.jpg"></a>
             <p>Kagamine Len</p>
           </div>
-          <div class="vocas" style="margin-left:20px;">
-            <a href="#"><img src="images/lukavoca.jpg"></a>
+          <div class="vocas" style="margin-left:20px; pointer-events:none;">
+            <a ><img src="images/lukavoca.jpg"></a>
             <p>Megurine Luka</p>
           </div>
-          <div class="vocas" style="margin-left:20px;">
-            <a href="#"><img src="images/kaitovo.jpg"></a>
+          <div class="vocas" style="margin-left:20px; pointer-events:none;">
+            <a><img src="images/kaitovo.jpg"></a>
             <p>KAITO</p>
           </div>
-          <div class="vocas" style="margin-left:20px;">
-            <a href="#"><img src="images/meikovo.jpg"></a>
+          <div class="vocas" style="margin-left:20px; pointer-events:none;">
+            <a><img src="images/meikovo.jpg"></a>
             <p>MEIKO</p>
           </div>
-          <div class="vocas" style="margin-left:20px;">
-            <a href="#"><img src="images/gumivo.jpg"></a>.
+          <div class="vocas" style="margin-left:20px; pointer-events:none;">
+            <a><img src="images/gumivo.jpg"></a>.
             <p>GUMI</p>
           </div>
-          <div class="vocas" style="margin-left:20px;">
-            <a href="#"><img src="images/yukivo.jpg"></a>
+          <div class="vocas" style="margin-left:20px; pointer-events:none;">
+            <a><img src="images/yukivo.jpg"></a>
             <p>Kaai Yuki</p>
           </div>
-          <div class="vocas" style="margin-left:20px;">
-            <a href="#"><img src="images/mikivo.jpg"></a>
+          <div class="vocas" style="margin-left:20px; pointer-events:none;">
+            <a><img src="images/mikivo.jpg"></a>
             <p>SF-A2 Miki</p>
           </div>
         </div>
         <h2 style="margin-top:15px;">SynthV</h2>
-        <div class="voca" style="margin-top:10px;">
+        <div class="voca" style="margin-top:10px; pointer-events:none;">
           <div class="vocas" style="margin-left:0px;">
-            <a href="#"><img src="images/tetovo.jpg"></a>
+            <a><img src="images/tetovo.jpg"></a>
             <p>Kasane Teto</p>
           </div>
-          <div class="vocas" style="margin-left:20px;">
-            <a href="#"><img src="images/fortevo.jpg"></a>
+          <div class="vocas" style="margin-left:20px; ">
+            <a><img src="images/fortevo.jpg"></a>
             <p>Eleanor Forte</p>
           </div>
           <div class="vocas" style="margin-left:20px;">
-            <a href="#"><img src="images/yixivo.jpg"></a>
+            <a><img src="images/yixivo.jpg"></a>
             <p>Yi Xi</p>
           </div>
         </div>
         <h2 style="margin-top:15px;">Utau</h2>
-        <div class="voca" style="margin-top:10px;">
+        <div class="voca" style="margin-top:10px; pointer-events:none;">
           <div class="vocas" style="margin-left:0px;">
-            <a href="#"><img src="images/reivo.jpg"></a>
+            <a><img src="images/reivo.jpg"></a>
             <p>Adachi Rei</p>
           </div>
         </div>
+        <h2 style="margin-top:15px;">Top 10 Lagu Teratas</h2>
+        <div class="voca" style="margin-top:10px;">
+          <div class="vocas" style="margin-left:0px; cursor:pointer;" data-link="AqI97zHMoQw">
+            <img src="songs/young.jpg">
+            <p>Young Girl A</p>
+            <p>siinamota</p>
+            <p>203 Juta Views</p>
+          </div>
+          <div class="vocas" style="margin-left:20px; cursor:pointer;" data-link="19y8YTbvri8">
+            <img src="songs/mesmerizer.jpg">
+            <p>Mesmerizer</p>
+            <p>32ki</p>
+            <p>200 Juta Views</p>
+          </div>
+          <div class="vocas" style="margin-left:20px; cursor:pointer;" data-link="dHXC_ahjtEE">
+            <img src="songs/goodbye.jpg">
+            <p>Goodbye Sengen</p>
+            <p>Chinozo</p>
+            <p>155 Juta Views</p>
+          </div>
+          <div class="vocas" style="margin-left:20px; cursor:pointer;" data-link="cQKGUgOfD8U">
+            <img src="songs/echo.jpg">
+            <p>Echo</p>
+            <p>Crusher</p>
+            <p>126 Juta Views</p>
+          </div>
+          <div class="vocas" style="margin-left:20px; cursor:pointer;" data-link="Soy4jGPHr3g">
+            <img src="songs/tetoris.jpg">
+            <p>Tetoris</p>
+            <p>Hiiragi Magnetite</p>
+            <p>121 Juta Views</p>
+          </div>
+          <div class="vocas" style="margin-left:20px; cursor:pointer;" data-link="NTrm_idbhUk">
+            <img src="songs/aishite.jpg">
+            <p>Love me. love me, love me </p>
+            <p>Kikuo</p>
+            <p>119 Juta Views</p>
+          </div>
+          <div class="vocas" style="margin-left:20px; cursor:pointer;" data-link="kbNdx0yqbZE">
+            <img src="songs/monitoring.jpg">
+            <p>Monitoring</p>
+            <p>Deco*27</p>
+            <p>119 Juta Views</p>
+          </div>
+          <div class="vocas" style="margin-left:20px; cursor:pointer;" data-link="eSW2LVbPThw">
+            <img src="songs/rabbit.jpg">
+            <p>Rabbit Hole</p>
+            <p>Deco*27</p>
+            <p>118 Juta Views</p>
+          </div>
+          <div class="vocas" style="margin-left:20px; cursor:pointer;" data-link="D6DVTLvOupE">
+            <img src="songs/kyoufuu.jpg">
+            <p>Kyoufuu All Back</p>
+            <p>Yukopi</p>
+            <p>115 Juta Views</p>
+          </div>
+          <div class="vocas" style="margin-left:20px; cursor:pointer;" data-link="2b1IexhKPz4">
+            <img src="songs/kyu.jpg">
+            <p>Kyu-kurarin</p>
+            <p>iyowa</p>
+            <p>111 Juta Views</p>
+          </div>
+        </div>
+        <h2 style="margin-top:20px;" id="ttg">Tentang Kami</h2>
+        <p style="margin-left:20px;">Anda bisa temukan kami di</p>
+        <div class="maps">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d5829.931307878409!2d141.35279851755587!3d43.06318991258453!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDPCsDAzJzQzLjUiTiAxNDHCsDIxJzE1LjgiRQ!5e0!3m2!1sen!2sid!4v1780817015057!5m2!1sen!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
     </div>
+    <div class="youtube-player-overlay">
+          <div class="youtube-player-popup">
+             <iframe 
+              src="https://www.youtube.com/embed/" 
+              title="oyasumination - ippo.tsk | Eleanor Forte (Synth V)" 
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" 
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
     <div id="alertBox" class="alert" style="display:none;"></div>
     <script src="login/js/welcome.js"></script>
+    <script src="main.js"></script>
   </body>
 </HTML>
