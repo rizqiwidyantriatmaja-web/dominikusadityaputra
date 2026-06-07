@@ -4,181 +4,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
      <title>sigmga</title>
      <link rel="stylesheet" href="style.css">
-      <style>
-        @import url('https://fonts.cdnfonts.com/css/violet-sans');
-        
-        body {
-          background-image: url('images/miku3.png');
-          background-repeat: no-repeat; 
-          background-size: cover;     
-          background-attachment: fixed;
-          background-size:100%;
-          background-position: center;
-        }
-        ::-webkit-scrollbar {
-        width: 10px;
-          }
-        ::-webkit-scrollbar-track {
-        background: #f1f1f1; 
-          }
-        ::-webkit-scrollbar-thumb {
-        background: #888; 
-          }
-        ::-webkit-scrollbar-thumb:hover {
-        background: #555; 
-          }
-        * {
-          box-sizing: border-box;
-          margin:0px;
-          padding:0px;
-        }
-        .youtube-player-overlay{
-          position:fixed;
-          inset:0;
-          background:rgba(0,0,0,0.6);
-          opacity:0;
-          pointer-events:none;
-          transition: all 400ms ease;
-        }
-        .youtube-player-overlay.active{
-          opacity:1;
-          pointer-events:auto;
-        }
-        .youtube-player-popup{
-          position:fixed;
-          width:80%;
-          left:50%;
-          transform:translate(-50%, -100%);
-          transition: all 400ms ease;
-        }
-        .youtube-player-overlay.active .youtube-player-popup{
-          transform:translate(-50%, 0);
-        }
-        .youtube-player-popup iframe{
-          width:100%;
-          aspect-ratio:16/9;
-        }
-        .column {
-          float: left;
-          padding: 10px;
-          height:1800px;
-        }
-        .left {
-          width: 14%;
-          border-radius:5px;
-          margin-left:7px;
-        }
-        .right {
-          width: 84%;
-          margin-left:10px;
-          border-radius:5px;
-        }
-        .row:after {
-          content: "";
-          display: table;
-          clear: both;
-        }
-        .left h1{
-          font-family:'Poppins';
-          font-size:30px;
-          margin-left: 3px;
-          margin-top:15px;
-          align-text:center;
-          justify-content:center;
-        }
-        .left a{
-          font-family:'Violet Sans';
-          font-size:1em;
-          margin-left: 15px;
-          text-decoration:none;
-        }
-        .right h1 {
-          font-family:'Poppins';
-          font-size:3em;
-          margin-left: 15px;
-          margin-top:15px;
-        }
-        .right h2{
-          font-family:'Poppins';
-          font-size:2em;
-          margin-left:20px;
-        }
-        .right p{
-          font-family:'Violet Sans';
-          margin-left:15px;
-          margin-top:0px;
-          font-size:1em;
-        }
-        .biodata {
-          display: flex;  
-          gap: 10px;
-          margin-left:15px;
-          margin-top:15px;
-        }
-        .image {
-          flex-direction:column;
-          text-align:center;
-        }
-        .text{
-          margin-left:5px;
-        }
-        .text p{
-          margin-left:20px;
-          margin-top:5px;
-        }
-        .voca {
-          display:flex;
-          gap:10px;
-          flex-direction:row;
-          align-text:center;
-          width: 1000px; 
-          overflow-x: auto;
-          white-space: nowrap;
-          margin-left:20px;
-          padding:10px;
-          justify-content:left;
-        }
-        .vocas {
-          min-width:140px;
-          justify-content:center;
-          text-align:left;
-          cursor: pointer;
-        }
-        .vocas img{
-          width:140px;
-          height:140px;
-          border-radius:7px;
-        }
-        .vocas p{
-          font-size:10px;
-          font-family:'Violet Sans';
-          margin-top:4px;
-          margin-left:0px;
-          width:140px;
-        }
-        .title {
-          display:flex;
-          flex-direction:row;
-          align-items:flex-end;
-        }
-        .title a{
-          font-family:'Violet Sans';
-          text-decoration:none;
-          font-size:14px;
-          margin-left:15px;
-          margin-bottom:7px;
-        }
-      </style>
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Something else</a></li>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a style="cursor:default;">Tentang Kami</a></li>
+          <li><a style="cursor:default;">Kontak Kami</a></li>
+          <li><a href="admin/src/index.html" class="disabled" id="userAdmin">Panel Admin</a></li>
           <p id="userInfo" style="margin-left:650px;">Belum Login</p>
         </ul>
       </nav>
@@ -189,7 +23,14 @@
     <div class="row">
       <div class="column left" style="background-color: rgba(197, 213, 226, 0.85);">
         <h1>VocaPedia</h1>
-        <a href="index.html">Home</a>
+        <div class="list">
+          <a href="index.html">Beranda</a>
+          <a href="https://vocaloid.fandom.com/wiki/Vocaloid_Wiki" >Vocaloid</a>
+          <a href="https://synthv.fandom.com/wiki/SynthV_Wiki">SynthV</a>
+          <a href="https://utau.fandom.com/wiki/UTAU_wiki">Utau</a>
+          <a href="https://vocaloid.fandom.com/wiki/Category:Songs">Lagu</a>
+          <a href="https://vocaloid.fandom.com/wiki/Category:Producer">Produser</a>
+        </div>
       </div>
       <div class="column right" style="background-color: rgba(197, 213, 226, 0.85);">
         <div class="biodata">
@@ -223,27 +64,22 @@
         <div class="voca">
           <div class="vocas" style="margin-left:0px;" data-link="Yr16-jMLrLU">
             <img src="songs/i dont.jpeg">
-            <p>aku tidak mengerti arti hidup</p>
-            <p>(生きてる意味がわからない)</p>
+            <p>生きてる意味がわからない</p>
             <p>kamisama usagi</p>
           </div>
           <div class="vocas" style="margin-left:20px;" data-link="fnu1sMCcIVI">
             <img src="songs/stardust.jpeg">
-            <p>Bintangduster</p>
-            <p>(Starduster)</p>
+            <p>Starduster</p>
             <p>JimmyThumb-P</p>
           </div>
           <div class="vocas" style="margin-left:20px;" data-link="x7P5FeckDVU">
             <img src="songs/sonar.jpeg">
-            <p>Catatan Sonar</p>
-            <p>(Sonars Record)</p>
+            <p>Sonars Record</p>
             <p>Toripiyo</p>
           </div>
           <div class="vocas" style="margin-left:20px;" data-link="cF91xil98Mc">
             <img src="songs/connect.jpeg">
-            <p>HUBUNGKAN:</p>
-            <p>BERKOMUNIKASI</p>
-            <p>(CONNECT:COMMUNE)</p>
+            <p>CONNECT:COMMUNE</p>
             <p>FLAVOR FOLEY</p>
           </div>
           <div class="vocas" style="margin-left:20px;" data-link="qtuX4cHk-vE">
@@ -253,21 +89,17 @@
           </div>
           <div class="vocas" style="margin-left:20px;" data-link="n42xMgsivEY">
             <img src="songs/yours.jpeg">
-            <p>milikmu untuk menjawab</p>
-            <p>(yours to answer)</p>
+            <p>yours to answer</p>
             <p>GloopBloop</p>
           </div>
           <div class="vocas" style="margin-left:20px;" data-link="e1gY8dUfKxg">
             <img src="songs/nice.jpeg">
-            <p>Senang bertemu denganmu,</p>
-            <p>Tuan Manusia Bumi</p>
-            <p>(Nice To Meet You, Mr. Earthling)</p>
+            <p>Nice To Meet You, Mr. Earthling</p>
             <p>PinocchioP</p>
           </div>
           <div class="vocas" style="margin-left:20px;" data-link="FgWIel5gXEw">
             <img src="songs/telpon.jpeg">
-            <p>TELEPON</p>
-            <p>(TELEPHONE)</p>
+            <p>TELEPHONE</p>
             <p>tony</p>
           </div>
         </div>
