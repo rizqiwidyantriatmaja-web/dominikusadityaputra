@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("userInfo").innerText = "Halo, " + user;
         document.getElementById("userInfo").className = "sudah-login";
         if (user === "admin") {
-            document.getElementById("").classList.remove("disabled");
+            document.getElementById("userAdmin").classList.remove("disabled");
         }
         
         document.getElementById("authArea").innerHTML = `
