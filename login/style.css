@@ -771,7 +771,7 @@ body:has(form button.footer-register-btn) .socials-img img {
 }
 #myVideo {
   position: fixed;
-  right: -150px;
+  right: 0;
   bottom:0;
   top: -100px;
   min-width: 100%;
