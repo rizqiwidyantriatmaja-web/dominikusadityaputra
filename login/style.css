@@ -228,11 +228,11 @@ body:has(form button.footer-register-btn) .container {
 }
 
 body:has(form button.footer-register-btn) .left {
-    border-radius: 0 16px 16px 0;
+    border-radius:16px;
 }
 
 body:has(form button.footer-register-btn) .right {
-    border-radius: 16px 0 0 16px;
+    border-radius:16px;
 }
 
 body:has(form button.footer-register-btn) .left header {
