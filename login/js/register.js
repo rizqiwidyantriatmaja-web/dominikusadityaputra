@@ -16,16 +16,20 @@ document.getElementById("registerForm").addEventListener("submit", async functio
     const data = await res.json();
 
     if (data.status === "success") {
-        document.getElementById("message").innerText = "Registrasi berhasil, silakan login";
-        window.location.href = "index.html";
+        document.getElementById("alertBox").innerText = "Registrasi berhasil, silakan login";
+        document.getElementById("alertBox").style.display = "block";
+
+        setTimeout(() => {
+            window.location.href = "index.html";
+        }, 2000);
     } else {
-        const message = document.getElementById("message");
-        message.innerText = "Gagal registrasi, ganti username anda";
-        message.style.display = "block";
+        const alertBox = document.getElementById("alertBox");
+        alertBox.innerText = "Gagal registrasi, username kosong/sudah digunakan";
+        alertBox.style.display = "block";
 
         
         setTimeout(() => {
-            message.style.display = "none";
+            alertBox.style.display = "none";
         }, 3000);
     }
 });
