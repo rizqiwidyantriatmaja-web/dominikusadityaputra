@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="style.css">
     <style>
         #alertBox{
-                position: relative;
-                top: 20px;
-                left:0px;
-                z-index: 999;
+            position: relative;
+            top: 20px;
+            left:0px;
+            z-index: 999;
         }
     </style>
 </head>
@@ -18,8 +18,8 @@
     <div class="container">
         <div class="left">
             <header>
-                <h1>Log In</h1>
-                <p>Welcome back, please enter details</p>
+                <h1>Masuk</h1>
+                <p>Selamat datang kembali, silakan masukkan detail Anda</p>
             </header>
             <form id="loginForm" method="POST" novalidate>
                 <div class="form-field">
@@ -32,18 +32,18 @@
                     <label for="password">Password</label>
                     <input type="password" name="password" id="password" autocomplete="off">
                     <!-- <p id="message"></p> -->
-                    <a href="#" class="forgot-pass">Forgot Password?</a>
+                    <a href="#" class="forgot-pass">Lupa Password?</a>
                     <div id="alertBox" class="alert" style="display:none;"></div>
                     <div id="invalid-pass" class="error" aria-live="polite"></div>
                 </div>
                 
                 <footer>
-                    <button class="footer-log-in-btn" id="submitBtn">Log In</button>
+                    <button class="footer-log-in-btn" id="submitBtn">Masuk</button>
                     <div class="no-account">
-                        <p>Don't have an account?</p>
-                        <a href="regis.html">Register</a>
+                        <p>Tidak punya akun?</p>
+                        <a href="regis.html">Registrasi</a>
                     </div>
-                    <div class="continue-with">Or Continue With</div>
+                    <div class="continue-with">Atau lanjutkan dengan</div>
                     <div class="socials">
                         <a class="socials-img" href="#"><img src="./assets/Google.png" alt="Google"></a>
                         <a class="socials-img" href="#"><img src="./assets/Github.png" alt="GitHub"></a>
@@ -52,9 +52,10 @@
                 </footer>
             </form>
         </div>
-        <div class="right">
-        </div>
     </div>
+    <video autoplay muted loop id="myVideo">
+        <source src="assets/miku.mp4" type="video/mp4">
+    </video>
     <script src="login.js"></script>
     <script src="js/login.js"></script>
 </body>
